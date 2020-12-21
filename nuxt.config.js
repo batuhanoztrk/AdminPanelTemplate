@@ -56,7 +56,8 @@ export default {
     "~/plugins/vue-confirm-dialog",
     "~/plugins/vue-number-input",
     "~/plugins/vue-currency-input",
-    "~/plugins/vue2-daterange-picker"
+    "~/plugins/vue2-daterange-picker",
+    "~/plugins/uuid"
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
