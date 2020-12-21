@@ -17,6 +17,15 @@ export default {
       {
         type: "text/javascript",
         src:
+          "https://cyberistanbul.com/premea/table-export/libs/FileSaver/FileSaver.min.js"
+      },
+      {
+        type: "text/javascript",
+        src: "https://cyberistanbul.com/premea/table-export/tableExport.min.js"
+      },
+      {
+        type: "text/javascript",
+        src:
           "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"
       },
       {
