@@ -2,15 +2,13 @@ export default {
   ssr: false,
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'AdminPanelTemplate',
+    title: "AdminPanelTemplate",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { hid: "description", name: "description", content: "" }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     script: [
       {
         type: "text/javascript",
@@ -36,31 +34,32 @@ export default {
   plugins: [
     "~/plugins/axios",
     "~/plugins/vue-good-table",
-    "~/plugins/hash-decode",
     "~/plugins/vue-tel-input",
     "~/plugins/countries",
     "~/plugins/vue-multiselect",
-    "~/plugins/uuid",
-    "~/plugins/vue-money-input",
     "~/plugins/vue-select",
     "~/plugins/helpers",
     "~/plugins/vuejs-dialog",
     "~/plugins/vue2-editor",
     "~/plugins/tinymce-editor",
     "~/plugins/vue-google-maps",
-    "~/plugins/vue-emoji-picker"
+    "~/plugins/vue-emoji-picker",
+    "~/plugins/vue-confirm-dialog",
+    "~/plugins/vue-number-input",
+    "~/plugins/vue-currency-input",
+    "~/plugins/vue2-daterange-picker"
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: ["@nuxt/components"],
+  buildModules: ["@nuxt/components", "@nuxtjs/vuetify"],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    "@nuxtjs/axios",
     "@nuxtjs/toast",
     "@nuxtjs/universal-storage",
     "@nuxtjs/moment",
@@ -115,6 +114,5 @@ export default {
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {
-  }
-}
+  build: {}
+};
