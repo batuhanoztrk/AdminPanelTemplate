@@ -16,5 +16,44 @@
     "error": "Girdiğiniz kullanıcı adı ve/veya şifre ile eşleşen bir yönetici bulunamadı."
   },
   "nullError": "Lütfen yıldızlı(*) alanların tümünü doldurun.",
-  "error": "Sistemsel bir hata oluştu ve işleminiz gerçekleştirilemedi. Lütfen daha sonra tekrar deneyin."
+  "error": "Sistemsel bir hata oluştu ve işleminiz gerçekleştirilemedi. Lütfen daha sonra tekrar deneyin.",
+  "previous": "Önceki",
+  "next": "Sonraki",
+  "multiSelect": {
+    "noMatch": "Üzgünüz, eşleşen seçenek yok.",
+    "noOptions": "Liste boş.",
+    "select": "Seçmek için enter tuşuna basın.",
+    "remove": "Kaldırmak için enter tuşuna basın.",
+    "selected": "Seçili"
+  },
+  "selectBox": {
+    "sorry": "Üzgünüz, eşleşen seçenek yok."
+  },
+  "add": "Ekle",
+  "update": "Güncelle",
+  "chooseFile": "Dosya Seç...",
+  "create": "Ekle",
+  "deleteSelected": "Seçili Verileri Sil",
+  "datatable": {
+    "search": "Arama...",
+    "pagination": {
+      "next": "İleri",
+      "prev": "Geri",
+      "rowsPerPage": "Sayfa başına satır",
+      "of": "",
+      "page": "",
+      "all": "Hepsi"
+    },
+    "noData": "Bu tabloda kayıt yok.",
+    "selectionText": "satır seçildi",
+    "clear": "temizle"
+  },
+  "deleteMessage": "Seçili verileri silmek istediğinize emin misiniz?",
+  "dialog": {
+    "cancel": "Hayır",
+    "ok": "Evet"
+  },
+  "yes": "Evet",
+  "no": "Hayır",
+  "close": "Kapat"
 }
