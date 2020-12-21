@@ -61,7 +61,7 @@ export default {
   data() {
     return {
       username: "",
-      password: ""
+      password: "",
     };
   },
   created() {
@@ -77,7 +77,7 @@ export default {
       if (this.username && this.password) {
         const data = await this.$axios.$post("/auth/login", {
           username: this.username,
-          password: this.password
+          password: this.password,
         });
 
         if (data.error === 0) {
@@ -88,9 +88,9 @@ export default {
         } else {
           this.$toast.error(this.$t("auth.error"));
         }
-      } else this.$toast.error(this.$t("warning"));
-    }
-  }
+      } else this.$toast.error(this.$t("nullError"));
+    },
+  },
 };
 </script>
 

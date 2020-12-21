@@ -16,6 +16,6 @@
 <script>
 export default {
   name: "Default",
-  middleware: ["auth"]
+  //middleware: ["auth"]
 };
 </script>

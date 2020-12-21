@@ -12,10 +12,9 @@
     <div class="card mb-4">
       <div class="card-body">
         <h4>
-          Bu panel Cyber Istanbul tarafından Aselsan Ailem uygulaması ve web
-          sitesi için hazırlanmıştır.<br /><br />Teknik destek için lütfen
-          bizimle
-          <a href="https://cyberistanbul.com/iletisim" target="_blank"
+          Bu panel Batuhan Öztürk tarafından hazırlanmıştır.<br /><br />Teknik
+          destek için lütfen benimle
+          <a href="mailto:batuhanoztrk@hotmail.com" target="_blank"
             >iletişime geçin</a
           >.
         </h4>
