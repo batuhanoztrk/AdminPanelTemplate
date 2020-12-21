@@ -17,11 +17,11 @@ export default {
       {
         type: "text/javascript",
         src:
-          "https://cyberistanbul.com/premea/table-export/libs/FileSaver/FileSaver.min.js"
+          "https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
       },
       {
         type: "text/javascript",
-        src: "https://cyberistanbul.com/premea/table-export/tableExport.min.js"
+        src: "https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/tableExport.min.js"
       },
       {
         type: "text/javascript",
