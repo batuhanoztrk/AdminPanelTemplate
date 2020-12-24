@@ -1,6 +1,11 @@
 <template>
   <div class="form-group">
-    <label :class="required || htmlRequired ? 'required' : null" v-if="label" :for="idName">{{ label }}</label>
+    <label
+      :class="required || htmlRequired ? 'required' : null"
+      v-if="label"
+      :for="idName"
+      >{{ label }}</label
+    >
     <multiselect
       v-model="selectedValue"
       :multiple="multiple"
@@ -29,7 +34,7 @@ export default {
   data() {
     return {
       selectedValue: null,
-      idName: ""
+      idName: "",
     };
   },
   props: {
@@ -38,26 +43,26 @@ export default {
       required: true,
       default: () => {
         return [];
-      }
+      },
     },
-    className: {type: String, default: "multiselect1"},
-    label: {type: String, default: ""},
-    placeholder: {type: String, default: ""},
-    trackBy: {type: String, default: "id"},
-    required: {type: Boolean, default: false},
-    control: {type: Boolean, default: true},
+    className: { type: String, default: "multiselect1" },
+    label: { type: String, default: "" },
+    placeholder: { type: String, default: "" },
+    trackBy: { type: String, default: "id" },
+    required: { type: Boolean, default: false },
+    control: { type: Boolean, default: true },
     optionKey: String,
-    returnedOptionKey: {type: String, required: false, default: "id"},
+    returnedOptionKey: { type: String, required: false, default: "id" },
     value: [String, Number, Array],
     id: String,
-    multiple: {type: Boolean, default: false},
-    clearOnSelect: {type: Boolean, default: undefined},
-    closeOnSelect: {type: Boolean, default: undefined},
+    multiple: { type: Boolean, default: false },
+    clearOnSelect: { type: Boolean, default: undefined },
+    closeOnSelect: { type: Boolean, default: undefined },
     selectLabel: String,
     deselectLabel: String,
     selectedLabel: String,
-    minimize: {type: Boolean, default: false},
-    htmlRequired: {type: Boolean, default: false}
+    minimize: { type: Boolean, default: false },
+    htmlRequired: { type: Boolean, default: false },
   },
   methods: {
     setSelected(val, oldVal) {
@@ -68,9 +73,9 @@ export default {
               const selecteds = [];
 
               if (Array.isArray(this.value)) {
-                this.value.forEach(e => {
+                this.value.forEach((e) => {
                   const index = val.findIndex(
-                    c => c[this.returnedOptionKey] === e
+                    (c) => c[this.returnedOptionKey] === e
                   );
 
                   if (index !== -1) {
@@ -82,7 +87,7 @@ export default {
               this.selectedValue = selecteds;
             } else {
               const index = val.findIndex(
-                e => e[this.returnedOptionKey] === this.value
+                (e) => e[this.returnedOptionKey] === this.value
               );
 
               if (index !== -1) {
@@ -96,7 +101,7 @@ export default {
           this.selectedValue = this.value;
         }
       }
-    }
+    },
   },
   watch: {
     selectedValue(val, oldVal) {
@@ -107,7 +112,7 @@ export default {
         if (this.multiple) {
           if (typeof val === "object" && val !== null) {
             returnedValue = [];
-            val.forEach(e => {
+            val.forEach((e) => {
               returnedValue.push(e[this.returnedOptionKey]);
             });
           }
@@ -125,7 +130,7 @@ export default {
     },
     value() {
       this.setSelected(this.options, null);
-    }
+    },
   },
   computed: {
     isValid() {
@@ -177,23 +182,23 @@ export default {
       return this.minimize
         ? ""
         : this.selectLabel
-          ? this.selectLabel
-          : this.$i18n.t("multiSelect.select");
+        ? this.selectLabel
+        : this.$i18n.t("multiSelect.select");
     },
     _deselectLabel() {
       return this.minimize
         ? ""
         : this.deselectLabel
-          ? this.deselectLabel
-          : this.$i18n.t("multiSelect.remove");
+        ? this.deselectLabel
+        : this.$i18n.t("multiSelect.remove");
     },
     _selectedLabel() {
       return this.minimize
         ? ""
         : this.selectedLabel
-          ? this.selectedLabel
-          : this.$i18n.t("multiSelect.selected");
-    }
+        ? this.selectedLabel
+        : this.$i18n.t("multiSelect.selected");
+    },
   },
   created() {
     this.setSelected(this.options, null);
@@ -203,7 +208,7 @@ export default {
     } else {
       this.idName = this.$uuid();
     }
-  }
+  },
 };
 </script>
 
@@ -218,7 +223,7 @@ export default {
   font-size: 1rem;
   font-weight: 400;
   width: 100%;
-  padding: 0.375rem 0.75rem;
+  padding: 0 0.75rem;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
@@ -232,6 +237,19 @@ export default {
 
 .multiselect1[data-isvalid="false"] .multiselect__tags {
   border-color: #dc3545;
+}
+
+.multiselect1 .multiselect__placeholder {
+  color: #6E757C;
+  padding-top: 10px;
+}
+
+.multiselect1 .multiselect__tag {
+  margin-top: 10px;
+}
+
+.multiselect1 .multiselect__input {
+  margin-top: 7px;
 }
 
 .multiselect1 .multiselect__single,
