@@ -252,6 +252,10 @@ export default {
   margin-top: 7px;
 }
 
+.multiselect1 .multiselect__single {
+  margin-top: 5.5px !important;
+}
+
 .multiselect1 .multiselect__single,
 .multiselect1 .multiselect__input {
   line-height: 1.7;
