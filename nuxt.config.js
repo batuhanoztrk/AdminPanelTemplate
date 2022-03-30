@@ -49,7 +49,6 @@ export default {
     "~/plugins/vue-select",
     "~/plugins/helpers",
     "~/plugins/vuejs-dialog",
-    "~/plugins/vue2-editor",
     "~/plugins/tinymce-editor",
     "~/plugins/vue-google-maps",
     "~/plugins/vue-emoji-picker",
@@ -57,7 +56,16 @@ export default {
     "~/plugins/vue-number-input",
     "~/plugins/vue-currency-input",
     "~/plugins/vue2-daterange-picker",
-    "~/plugins/uuid"
+    "~/plugins/uuid",
+    '~/plugins/v-mask',
+    '~/plugins/vee-validate',
+    '~/plugins/vue-slick',
+    '~/plugins/vue-inner-image-zoom',
+    '~/plugins/vue-infinite-loading',
+    '~/plugins/vue-lodash',
+    '~/plugins/vue-countdown',
+    '~plugins/vue-js-modal',
+    '~plugins/vue-window-size'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -73,17 +81,12 @@ export default {
     "@nuxtjs/toast",
     "@nuxtjs/universal-storage",
     "@nuxtjs/moment",
-    "nuxt-i18n"
+    "nuxt-i18n",
+    'nuxt-socket-io'
   ],
 
   i18n: {
     locales: [
-      {
-        code: "en",
-        iso: "en-US",
-        file: "en.json",
-        moment: "en"
-      },
       {
         code: "tr",
         iso: "tr-TR",
@@ -115,7 +118,7 @@ export default {
 
   axios: {
     host: "127.0.0.1",
-    port: 2053,
+    port: 5000,
     https: false
   },
   router: {

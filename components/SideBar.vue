@@ -18,7 +18,7 @@
             {{ $t("sidebar.interface") }}
           </div>
 
-          <a
+<!--          <a
             class="nav-link collapsed"
             href="#"
             data-toggle="collapse"
@@ -38,7 +38,7 @@
                 }}
               </nuxt-link>
             </nav>
-          </div>
+          </div>-->
 
         </div>
       </div>

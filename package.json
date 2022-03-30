@@ -1,5 +1,7 @@
 {
   "name": "AdminPanelTemplate",
+  "author": "batuhanoztrk",
+  "license": "MIT",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,6 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@chenfengyuan/vue-countdown": "1.1.5",
     "@chenfengyuan/vue-number-input": "1.2.1",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/moment": "^1.6.1",
@@ -18,19 +21,34 @@
     "chart.js": "^2.9.4",
     "core-js": "^3.6.5",
     "country-region-data": "^1.7.0",
+    "joi": "^17.6.0",
+    "lodash": "^4.17.21",
+    "nanoid": "^3.3.2",
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.15.4",
+    "nuxt-socket-io": "^2.0.3",
+    "nuxt-ssr-screen-size": "github:hugojerez/nuxt-ssr-screen-size",
     "quill-emoji": "^0.1.8",
     "read-excel-file": "^4.1.0",
+    "slugify": "^1.6.5",
+    "socket.io-client": "^4.4.1",
+    "ucwords": "^1.0.5",
     "uuid": "^8.3.1",
+    "v-mask": "2.2.4",
     "v-money": "^0.8.1",
+    "vee-validate": "2",
     "vue-chartjs": "^3.5.1",
     "vue-confirm-dialog": "1.0.2",
     "vue-currency-input": "1.22.4",
     "vue-emoji-picker": "^1.0.1",
     "vue-good-table": "^2.21.1",
+    "vue-infinite-loading": "2.4.5",
+    "vue-inner-image-zoom": "1.1.0",
+    "vue-js-modal": "2.0.1",
+    "vue-lodash": "2.1.2",
     "vue-multiselect": "^2.1.6",
     "vue-select": "^3.10.8",
+    "vue-slick-carousel": "https://github.com/TheComedian08/vue-slick-carousel.git",
     "vue-tel-input": "^4.4.2",
     "vue2-daterange-picker": "0.6.2",
     "vue2-editor": "^2.10.2",
@@ -39,9 +57,10 @@
   },
   "devDependencies": {
     "@nuxt/components": "^1.2.0",
+    "@nuxtjs/vuetify": "^1.11.2",
     "fibers": "^5.0.0",
-    "sass-loader": "^10.1.0",
+    "prettier": "^2.6.1",
     "sass": "^1.30.0",
-    "@nuxtjs/vuetify": "^1.11.2"
+    "sass-loader": "^10.1.0"
   }
 }

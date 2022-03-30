@@ -1,6 +1,6 @@
 import Vue from "vue";
-const { v4: uuidv4 } = require("uuid");
+import {nanoid} from "nanoid";
 
 Vue.prototype.$uuid = () => {
-  return uuidv4();
+  return nanoid()
 };
